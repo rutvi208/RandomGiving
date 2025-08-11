@@ -77,8 +77,7 @@ function App() {
               Powerful Features for Meaningful Impact
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Every feature is designed with transparency, security, and user experience in mind. We 
-              believe that giving should be simple, secure, and deeply rewarding.
+              Every feature is designed with transparency, security, and user experience in mind. We believe that giving and receiving should be simple, secure, and in the spirit of building meaningful connections.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -201,7 +200,7 @@ function App() {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Give Anonymously</h3>
                 <p className="text-gray-600">
-                  Your donation is processed securely and anonymously. No one from the receiver organization knows your true identity, ensuring complete privacy protection.
+                  Your donation is processed securely and you can choose to give anonymously. If desired, no one from the receiver organization will know your true identity, ensuring complete privacy protection.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-8 text-center">
@@ -219,7 +218,7 @@ function App() {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Track Your Impact</h3>
                 <p className="text-gray-600">
-                  Watch your cumulative impact grow through our visual dashboard. Discover how your kindness has transformed lives anonymously with detailed analytics.
+                  Watch your cumulative impact grow through our visual dashboard. Discover how your kindness has transformed lives anonymously with detailed analytics. Receive consolidated giving statements to non-profits to simplify your burden at tax time.
                 </p>
               </div>
               
@@ -232,7 +231,7 @@ function App() {
       <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Transparency Meets <span className="text-red-500">Anonymity</span>
+            Transparency Meets <span className="text-red-500">Impact</span>
           </h2>
           <p className="text-xl text-gray-600 mb-8">
             With Random Giving you're promised and guaranteed to control donation flow but track the collective 
@@ -254,7 +253,7 @@ function App() {
             </div>
           </div>
           <button className="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
-            Learn How About Our Promise
+            Our Promise
           </button>
         </div>
       </section>
@@ -302,8 +301,7 @@ function App() {
                 <span className="text-xl font-semibold">Random Giving</span>
               </div>
               <p className="text-gray-400 text-sm mb-4">
-                Empowering anonymous generosity through secure 
-                technology. Redefining how we contribute to causes we care about.
+                Crafted for social good and raising awareness for charities globally.
               </p>
               <p className="text-gray-500 text-xs">
                 Crafted for global social good and charity privacy.
@@ -346,7 +344,7 @@ function App() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">© 2024 Random Giving. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© 2025 Random Giving. All rights reserved.</p>
             <p className="text-gray-500 text-sm mt-2 md:mt-0">
               Made with ❤️ by a team committed to global good.
             </p>
