@@ -8,9 +8,8 @@ import {
   Users,
   Bell,
   Smartphone,
-  // Play,
+  Play,
 } from 'lucide-react';
-import Hero from './hero-slider';
 
 function App() {
   return (
@@ -35,8 +34,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <div><Hero/></div>
-      {/* <section className="bg-white py-20">
+      <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -69,7 +67,7 @@ function App() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Features Section */}
       <section className="bg-gray-50 py-20">
@@ -261,7 +259,7 @@ function App() {
       </section>
 
       {/* Mobile App Section */}
-      <section id="mobile-app-section" className="bg-gray-50 py-20">
+      <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -328,21 +326,7 @@ function App() {
               </ul>
             </div>
             <div>
-              {/* <h3 className="font-semibold mb-4">Connect</h3>
-              <div className="flex space-x-4">
-                <a href="#" className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700">
-                  <span className="text-xs">f</span>
-                </a>
-                <a href="#" className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700">
-                  <span className="text-xs">t</span>
-                </a>
-                <a href="#" className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700">
-                  <span className="text-xs">in</span>
-                </a>
-                <a href="#" className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700">
-                  <span className="text-xs">ig</span>
-                </a>
-              </div> */}
+              
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
