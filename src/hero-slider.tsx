@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Play, ChevronLeft, ChevronRight } from 'lucide-react';
+// , ChevronLeft, ChevronRight
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -16,9 +17,10 @@ const HeroSlider = () => {
       id: 'givers',
       title: (
         <>
-          Start Giving Today<br />
-          change to Start<br />
-          <span className="text-red-500">Receiving Today</span>
+          Give<br />
+          Anonymously,<br />
+          Impact<br />
+          <span className="text-red-500">Meaningfully</span>
         </>
       ),
       description: "Join thousands of givers in a secure, gamified platform where every donation creates lasting impact. Track your generosity in real-time while maintaining complete anonymity.",
@@ -43,13 +45,13 @@ const HeroSlider = () => {
   ];
 
   // Auto-advance slides every 8 seconds
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 8000);
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setCurrentSlide((prev) => (prev + 1) % slides.length);
+  //   }, 8000);
     
-    return () => clearInterval(timer);
-  }, []);
+  //   return () => clearInterval(timer);
+  // }, []);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -63,18 +65,34 @@ const HeroSlider = () => {
     setCurrentSlide(index);
   };
 
-  const handlePrimaryButtonClick = (action: 'app-downloads' | 'receiver-signup') => {
+  // const handlePrimaryButtonClick = (action: 'app-downloads' | 'receiver-signup') => {
+  //   if (action === 'app-downloads') {
+  //     // Scroll to app download section or open app store
+  //     console.log('Navigate to app downloads');
+  //   } else if (action === 'receiver-signup') {
+  //     // Navigate to receiver signup/approval process
+  //     console.log('Navigate to receiver signup');
+  //   }
+  // };
+const handlePrimaryButtonClick = (action: 'app-downloads' | 'receiver-signup') => {
     if (action === 'app-downloads') {
-      // Scroll to app download section or open app store
-      console.log('Navigate to app downloads');
+      // Scroll to app download section
+      const mobileAppSection = document.getElementById('mobile-app-section');
+      if (mobileAppSection) {
+        mobileAppSection.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
     } else if (action === 'receiver-signup') {
       // Navigate to receiver signup/approval process
-      console.log('Navigate to receiver signup');
+      // console.log('Navigate to receiver signup');
+      window.open('https://testflight.apple.com/join/SbQyVv4k', '_blank');
     }
   };
 
   return (
-    <section className="bg-white py-20 relative overflow-hidden">
+    <section className="bg-white py-12 sm:py-20 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative">
           {/* Slider Container */}
@@ -113,8 +131,10 @@ const HeroSlider = () => {
                     <div className="flex justify-center space-x-4">
                       <div className="relative">
                         <img 
-                          src="/Mockup1.png" 
-                          alt="RandomGiving App Mockup 1" 
+                          // src="/Mockup1.png" 
+                          // alt="RandomGiving App Mockup 1" 
+                          src={currentSlide === 0 ? "/Mockup1.png" : "/Receiver1.png"} 
+                          alt={currentSlide === 0 ? "RandomGiving App Mockup 1" : "RandomGiving Receiver Mockup 1"} 
                           className="w-64 h-auto rounded-3xl transform hover:scale-105 transition-transform duration-300" 
                         />
                         {/* Floating elements for visual interest */}
@@ -122,8 +142,8 @@ const HeroSlider = () => {
                       </div>
                       <div className="relative mt-8">
                         <img 
-                          src="/Mockup2.png" 
-                          alt="RandomGiving App Mockup 2" 
+                          src={currentSlide === 0 ? "/Mockup2.png" : "/Receiver2.png"} 
+                          alt={currentSlide === 0 ? "RandomGiving App Mockup 2" : "RandomGiving Receiver Mockup 2"} 
                           className="w-64 h-auto rounded-3xl transform hover:scale-105 transition-transform duration-300" 
                         />
                         <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-blue-500 rounded-full opacity-20 animate-bounce"></div>
@@ -136,21 +156,22 @@ const HeroSlider = () => {
           </div>
 
           {/* Navigation Arrows */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 backdrop-blur-sm hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 z-10"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 backdrop-blur-sm hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 z-10"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
-
+          <div className='hidden sm:flex'>
+            <button
+              onClick={prevSlide}
+              className="absolute left-2 top-[50%] xl:top-[55%] transform -translate-y-1/2 bg-white/80 backdrop-blur-sm hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 z-10"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="absolute right-2 top-[50%] xl:top-[55%] transform -translate-y-1/2 bg-white/80 backdrop-blur-sm hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 z-10"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </div>
           {/* Slide Labels */}
-          <div className="absolute top-4 right-4 z-10">
+          <div className="hidden lg:flex absolute top-4 right-4 z-10">
             <div className="bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-gray-600">
               {currentSlide === 0 ? 'For Givers' : 'For Receivers'}
             </div>

@@ -278,15 +278,21 @@ function App() {
                 anonymous donations, track your impact, and join giving challenges wherever 
                 you are.
               </p>
-              <div className="flex space-x-4 mb-8">
-                <img src="/app-store.png" alt="Download on App Store" className="h-12" />
-                {/* <img src="/app-store copy.png" alt="Get it on Google Play" className="h-12" /> */}
+              <div className="flex flex-row space-x-4 sm:mb-8">
+                {/* <img src="/app-store-apple.png" alt="Download on App Store" className="h-12" />
+                <img src="/app-store-android.png" alt="Get it on Google Play" className="h-12" /> */}
+                <a href="https://testflight.apple.com/join/SbQyVv4k" target="_blank" rel="noopener noreferrer">
+                  <img src="/app-store-apple.png" alt="Download on App Store" className="h-12" />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.notionmind.randomgiving" target="_blank" rel="noopener noreferrer">
+                  <img src="/app-store-android.png" alt="Get it on Google Play" className="h-12" />
+                </a>
               </div>
             </div>
             <div className="relative">
               <div className="flex justify-center space-x-4">
-                <img src="/Mockup1 copy.png" alt="Random Giving Mobile App Mockup 1" className="w-64 h-auto" />
-                <img src="/Mockup2 copy.png" alt="Random Giving Mobile App Mockup 2" className="w-64 h-auto" />
+                <img src="/Mockup1 copy.png" alt="Random Giving Mobile App Mockup 1" className="w-48 md:w-64 h-auto" />
+                <img src="/Mockup2 copy.png" alt="Random Giving Mobile App Mockup 2" className="w-48 md:w-64 h-auto" />
               </div>
             </div>
           </div>
@@ -309,8 +315,8 @@ function App() {
                 Crafted for global social good and charity privacy.
               </p>
             </div>
-            <div className='flex flex-col items-center'>
-              <h3 className="font-semibold mb-4 -ms-7">Platform</h3>
+            <div className='flex flex-col items-start lg:items-center'>
+              <h3 className="font-semibold mb-4 lg:-ms-7">Platform</h3>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li><a href="#" className="hover:text-white">How It Works</a></li>
                 <li><a href="#" className="hover:text-white">Features</a></li>
