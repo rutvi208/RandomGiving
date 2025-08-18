@@ -17,10 +17,8 @@ const HeroSlider = () => {
       id: 'givers',
       title: (
         <>
-          Give<br />
-          Anonymously,<br />
-          Impact<br />
-          <span className="text-red-500">Meaningfully</span>
+          Random Acts. <br /> Real
+          <span className="text-red-500"> Impact.</span>
         </>
       ),
       description: "Join thousands of givers in a secure, gamified platform where every donation creates lasting impact. Track your generosity in real-time while maintaining complete anonymity.",
@@ -37,7 +35,7 @@ const HeroSlider = () => {
           <span className="text-red-500">donations</span>
         </>
       ),
-      description: "Lower-fees, high user engagement for your cause, and reach thousands of users that may have not yet heard about your mission.",
+      description: "Lower fees, higher engagement, and access to thousands of new supporters for your cause.",
       primaryButton: "Start Receiving Today",
       primaryButtonAction: "receiver-signup", // Goes to receiver signup
       secondaryButton: "Watch How It Works"
@@ -106,8 +104,8 @@ const handlePrimaryButtonClick = (action: 'app-downloads' | 'receiver-signup') =
                     : 'opacity-0 absolute inset-0 pointer-events-none'
                 }`}
               >
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  <div className="space-y-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-6 2xl:gap-12 items-center">
+                  <div className="space-y-6 lg:ps-8 xl:ms-0">
                     <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                       {slide.title}
                     </h1>
@@ -128,7 +126,7 @@ const handlePrimaryButtonClick = (action: 'app-downloads' | 'receiver-signup') =
                     </div>
                   </div>
                   <div className="relative">
-                    <div className="flex justify-center space-x-4">
+                    <div className="flex justify-center space-x-2 xl:space-x-4">
                       <div className="relative">
                         <img 
                           // src="/Mockup1.png" 
@@ -159,13 +157,13 @@ const handlePrimaryButtonClick = (action: 'app-downloads' | 'receiver-signup') =
           <div className='hidden sm:flex'>
             <button
               onClick={prevSlide}
-              className="absolute left-2 top-[50%] xl:top-[55%] transform -translate-y-1/2 bg-white/80 backdrop-blur-sm hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 z-10"
+              className="absolute -left-6 2xl:-left-16 top-[50%] xl:top-[55%] transform -translate-y-1/2 bg-white/80 backdrop-blur-sm hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 z-10"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-2 top-[50%] xl:top-[55%] transform -translate-y-1/2 bg-white/80 backdrop-blur-sm hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 z-10"
+              className="absolute -right-6 2xl:-right-16 top-[50%] xl:top-[55%] transform -translate-y-1/2 bg-white/80 backdrop-blur-sm hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 z-10"
             >
               <ChevronRight className="w-5 h-5" />
             </button>

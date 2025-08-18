@@ -20,8 +20,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
-              <img src="/RandomGiving_Logo2_page-0001 3 copy.png" alt="Random Giving Logo" className="w-8 h-8" />
-              <span className="text-xl font-semibold text-gray-900">Random Giving</span>
+              <img src="/RandomGiving_Logo2_page-0001 3 copy.png" alt="RandomGiving Logo" className="w-8 h-8" />
+              <span className="text-xl font-semibold text-gray-900">RandomGiving</span>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#" className="text-gray-700 hover:text-gray-900 mt-2">Home</a>
@@ -63,8 +63,8 @@ function App() {
             </div>
             <div className="relative">
               <div className="flex justify-center space-x-4">
-                <img src="/Mockup1.png" alt="Random Giving App Mockup 1" className="w-64 h-auto" />
-                <img src="/Mockup2.png" alt="Random Giving App Mockup 2" className="w-64 h-auto" />
+                <img src="/Mockup1.png" alt="RandomGiving App Mockup 1" className="w-64 h-auto" />
+                <img src="/Mockup2.png" alt="RandomGiving App Mockup 2" className="w-64 h-auto" />
               </div>
             </div>
           </div>
@@ -78,9 +78,11 @@ function App() {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Powerful Features for Meaningful Impact
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            {/* <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Every feature is designed with transparency, security, and user experience in mind. We believe that giving and receiving should be simple, secure, and in the spirit of building meaningful connections.
-            </p>
+            </p> */}
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Designed for transparency, security, and ease — because giving should be simple, safe, and create lasting connections.            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg p-8 text-center">
@@ -120,9 +122,7 @@ function App() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Personal Impact Dashboard</h3>
               <p className="text-gray-600">
-                Visualize your giving journey with beautiful analytics. Track 
-                your impact with interactive charts and meaningful 
-                insights.
+                Visualize your giving journey with insightful analytics. Track your impact with interactive charts and meaningful insights.              
               </p>
             </div>
             <div className="bg-white rounded-lg p-8 text-center">
@@ -175,11 +175,11 @@ function App() {
         </div>
       </section>
 
-      {/* How Random Giving Works */}
+      {/* How RandomGiving Works */}
       <section className="bg-gradient-to-r from-blue-100 via-gray-100 to-red-100 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">How Random Giving Works</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">How RandomGiving Works</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Join a movement of kindness where every click creates meaningful impact. Our 
               platform makes giving simple, secure, and deeply rewarding.
@@ -236,7 +236,7 @@ function App() {
             Transparency Meets <span className="text-red-500">Impact</span>
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            With Random Giving you're promised and guaranteed to control donation flow but track the collective 
+            With RandomGiving you're promised and guaranteed to control donation flow but track the collective 
             impact while maintaining complete anonymity. Charities can add personalized thank you notes, creating a 
             feedback loop that increases transparency while protecting your privacy.
           </p>
@@ -274,7 +274,7 @@ function App() {
                 Anywhere You Go
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                Download the Random Giving app and spread kindness on the go. Make 
+                Download the RandomGiving app and spread kindness on the go. Make 
                 anonymous donations, track your impact, and join giving challenges wherever 
                 you are.
               </p>
@@ -291,8 +291,8 @@ function App() {
             </div>
             <div className="relative">
               <div className="flex justify-center space-x-4">
-                <img src="/Mockup1 copy.png" alt="Random Giving Mobile App Mockup 1" className="w-48 md:w-64 h-auto" />
-                <img src="/Mockup2 copy.png" alt="Random Giving Mobile App Mockup 2" className="w-48 md:w-64 h-auto" />
+                <img src="/Mockup1 copy.png" alt="RandomGiving Mobile App Mockup 1" className="w-48 md:w-64 h-auto" />
+                <img src="/Mockup2 copy.png" alt="RandomGiving Mobile App Mockup 2" className="w-48 md:w-64 h-auto" />
               </div>
             </div>
           </div>
@@ -305,8 +305,8 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <img src="/RandomGiving_Logo2_page-0001 3.png" alt="Random Giving Logo" className="w-8 h-8" />
-                <span className="text-xl font-semibold">Random Giving</span>
+                <img src="/RandomGiving_Logo2_page-0001 3.png" alt="RandomGiving Logo" className="w-8 h-8" />
+                <span className="text-xl font-semibold">RandomGiving</span>
               </div>
               <p className="text-gray-400 text-sm mb-4">
                 Crafted for social good and raising awareness for charities globally.
@@ -333,26 +333,10 @@ function App() {
                 <li><a href="#" className="hover:text-white">Terms of Service</a></li>
               </ul>
             </div>
-            <div>
-              {/* <h3 className="font-semibold mb-4">Connect</h3>
-              <div className="flex space-x-4">
-                <a href="#" className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700">
-                  <span className="text-xs">f</span>
-                </a>
-                <a href="#" className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700">
-                  <span className="text-xs">t</span>
-                </a>
-                <a href="#" className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700">
-                  <span className="text-xs">in</span>
-                </a>
-                <a href="#" className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700">
-                  <span className="text-xs">ig</span>
-                </a>
-              </div> */}
-            </div>
+            
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">© 2025 Random Giving. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© 2025 RandomGiving. All rights reserved.</p>
             <p className="text-gray-500 text-sm mt-2 md:mt-0">
               Made with ❤️ by a team committed to global good.
             </p>
